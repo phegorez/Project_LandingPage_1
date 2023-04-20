@@ -27,6 +27,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2vh 17vh;
+    position: relative;
+    z-index: 1;
+    background-color: white;
 }
 
 header .toggle, .close {
@@ -76,25 +79,23 @@ main .container {
 
 main .container .img {
     background-image: url(images/image-intro-desktop.jpg);
-    width: 100%;
+    width: 31%;
     height: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(69%, 31.5%);
+    transform: translate(0, 31.5%);
 }
 
 main .container article {
     width: 50%;
-    border: 1px red solid;
 }
 
 main .container article h1 {
     font-family: 'DM Serif Display', serif;
     font-size: 7vh;
     color: white;
-
     width: 60%;
     margin-bottom: 1vh;
 }
@@ -117,18 +118,36 @@ main .container article button {
     background-color: transparent;
     border: none;
     color: white;
-    outline: solid 1.5px white;
+    outline: solid 2px white;
     cursor: pointer;
     letter-spacing: 1px;
 }
 
 main .container .pattern-left {
-    position: relative;
-    right: 0;
-    top: 0;
-    transform: translate(0, 0);
-    outline: 1px solid green;
+    display: none;
 }
+
+main .container .pattern-left-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 115%);
+    width: 20vh;
+}
+
+main .container .pattern-right {
+    display: none;
+}
+
+main .container .pattern-right-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0,2%);
+    z-index: 0;
+}
+
+
 
 
 
@@ -265,18 +284,22 @@ main .container .pattern-left {
         justify-content: center;
     }
 
-    article h1 {
+    main .container article h1 {
         font-family: 'DM Serif Display', serif;
         font-size: 6.3vh;
         margin-bottom: 2vh;
+        width: 95%;
     }
 
-    article p {
+    main .container article p {
         font-family: 'Karla', sans-serif;
         margin-bottom: 5vh;
+        width: 95%;
+        font-size: 2.5vh;
+        line-height: 4vh;
     }
 
-    article button {
+    main .container article button {
         padding: 1.5vh 0;
         width: 45%;
         font-family: 'Karla', sans-serif;
@@ -285,7 +308,7 @@ main .container .pattern-left {
         background-color: transparent;
         border: none;
         color: white;
-        outline: solid 1.5px white;
+        outline: solid 2px white;
         cursor: pointer;
     }
 
@@ -296,6 +319,11 @@ main .container .pattern-left {
         transform: translate(0%, 325%);
         width: 30vh;
         z-index: 0;
+        display: block;
+    }
+
+    main .container .pattern-left-desktop {
+        display: none;
     }
 
     main .container .pattern-right {
@@ -305,6 +333,11 @@ main .container .pattern-left {
         transform: translate(0%, 293%);
         width: 20vh;
         z-index: 1;
+        display: block;
+    }
+
+    main .container .pattern-right-desktop {
+        display: none;
     }
 
     section {
