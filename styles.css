@@ -79,13 +79,13 @@ main .container {
 
 main .container .img {
     background-image: url(images/image-intro-desktop.jpg);
-    width: 31%;
+    width: 37%;
     height: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(0, 31.5%);
+    transform: translate(0, 23.5%);
 }
 
 main .container article {
@@ -147,6 +147,110 @@ main .container .pattern-right-desktop {
     z-index: 0;
 }
 
+section {
+    padding: 32vh 17vh;
+}
+
+section .top-line {
+    border: 1px solid hsl(273, 4%, 51%);
+    width: 10%;
+    margin-bottom: 5vh;
+}
+
+section h1.title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 7.5vh;
+    margin-bottom: 10vh;
+}
+
+section .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+.cards .card:first-child {
+    margin-right: 20vh;
+}
+
+.cards .card:nth-child(2) {
+    margin-right: 20vh;
+}
+
+.card img {
+    margin-bottom: 2vh;
+    width: 10vh;
+}
+
+.card h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+.card p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.7vh;
+    font-weight: 700;
+    color: hsl(273, 4%, 51%);
+}
+
+section .section-low {
+    background-color: hsl(256, 26%, 20%);
+    height: 26.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9vh;
+}
+
+section .section-low h1{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    width: 29%;
+    color: white;
+    font-size: 5vh;
+}
+
+section .section-low button {
+    padding: 1vh 0;
+    width: 16vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6vh;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: solid 1.5px white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+section .section-low .section-low-pattern-mobile {
+    display: none;
+}
+
+section .section-low .section-low-pattern-desktop {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(302%,646.6%);
+    z-index: 0;
+}
+
+footer {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .pattern {
+    display: none;
+}
 
 
 
@@ -154,8 +258,7 @@ main .container .pattern-right-desktop {
 
 
 
-
-@media screen and (max-width: 320px),
+@media screen and (max-width: 375px),
 (max-width:414px),
 (max-width:390px),
 (max-width:427px) {
@@ -264,7 +367,7 @@ main .container .pattern-right-desktop {
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
-        z-index: 3;
+        z-index: 0;
         position: relative;
         top: 0;
         left: 0;
@@ -316,7 +419,7 @@ main .container .pattern-right-desktop {
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(0%, 325%);
+        transform: translate(0%, 334%);
         width: 30vh;
         z-index: 0;
         display: block;
@@ -341,7 +444,7 @@ main .container .pattern-right-desktop {
     }
 
     section {
-        margin-top: 25vh;
+        margin-top: 13vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -356,24 +459,34 @@ main .container .pattern-right-desktop {
         margin-bottom: 5vh;
     }
 
-    section h1 {
+    section h1.title {
         font-family: 'DM Serif Display', serif;
-        font-size: 7vh;
+        font-size: 5vh;
     }
 
     section .cards {
-        margin-top: 13vh;
+        margin-top: -1vh;
         z-index: 3;
         position: relative;
+        display: block;
+        margin-bottom: 5vh;
     }
 
-    .cards .card {
+    section .cards .card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 10vh;
         text-align: center;
+    }
+
+    .cards .card:first-child {
+        margin-right: 0;
+    }
+
+    .cards .card:nth-child(2) {
+        margin-right: 0;
     }
 
     .card img {
@@ -402,10 +515,15 @@ main .container .pattern-right-desktop {
         padding-top: 32vh;
     }
 
-    .section-low img {
+    section .section-low .section-low-pattern-mobile {
         margin-left: 20vh;
-
+        display: block;
     }
+
+    section .section-low .section-low-pattern-desktop {
+        display: none;
+    }
+    
 
     .section-low h1 {
         text-align: center;
@@ -446,7 +564,10 @@ main .container .pattern-right-desktop {
     footer .pattern {
         display: block;
         margin-right: 10vh;
+    }
 
+    footer .pattern-desktop {
+        display: none;
     }
 
     footer .footer-top .logo {
@@ -500,64 +621,157 @@ main .container .pattern-right-desktop {
     }
 }
 
-@media screen and (min-width:414px) {
+@media screen and (max-width:320px) {
+    section .section-low {
+        border: 1px solid green;
+    }
+
+    section .section-low h1 {
+        top: 20vh !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+    section .section-low {
+        height: 50vh !important;
+        padding: 32vh 0 0 0;
+        overflow: hidden;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    section .section-low h1 {
+        font-size: 38px;
+        width: 100%;
+        top: -66vh !important;
+    }
+
+    section .section-low-pattern-mobile {
+        transform: translate(0,-76%) !important;
+    }
+
+    section .section-low button {
+        top: -62vh !important;
+        width: 18vh;
+        padding: 1.5vh;
+    }
+}
+
+@media screen and (max-width:414px) {
 
     nav {
         top: 11vh;
     }
 
-    section h1 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 5.5vh;
+    main .container .pattern-left {
+        transform: translate(0, 331%);
     }
 
-    .section-low {
-        height: 20vh;
+    section h1.title {
+        font-size: 4.5vh;
     }
 
-    .section-low h1 {
-        top: -42vh;
+    section .section-low {
+        height: 36vh;
+        padding: 32vh 0 0 0;
     }
 
-    .section-low button {
-        top: -42vh;
+    section .section-low-pattern-mobile {
+        transform: translate(-0,-91%);
+    }
+
+    section .section-low h1 {
+        top: -66vh;
+        width: 100%;
+        font-size: 4vh;
+    }
+
+    section .section-low button {
+        top: -66vh;
     }
 }
 
-@media screen and (min-width:390px) {
-
+@media screen and (max-width:390px) {
+    
     nav {
         top: 11.5vh;
     }
 
-    section h1 {
-        font-size: 5.5vh;
+    main .container .pattern-left {
+        transform: translate(0, 331%);
     }
 
-    .section-low {
-        height: 20vh;
+    section h1.tite {
+        font-size: 4.5vh;
     }
 
-    .section-low h1 {
-        top: -35vh;
+    section .section-low {
+        height: 39vh;
     }
 
-    .section-low button {
-        top: -37vh;
+    section .section-low-pattern-mobile {
+        transform: translate(0, -86%);
+    }
+
+    section .section-low h1 {
+        top: -66vh;
+        font-size: 38px;
+        width: 100%;
+        padding: 0;
+    }
+
+    section .section-low button {
+        top: -65vh;
+        width: 18vh;
+        padding: 1.5vh;
     }
 }
 
-    @media screen and (min-width:412px) {
+@media screen and (max-width:360px) {
+
+    section h1.title {
+        font-size: 4.5vh;
+    }
+
+    main .container .pattern-left {
+        transform: translate(0, 333%);
+    }
+
+    section .section-low {
+        height: 30vh;
+        padding: 32vh 0 0 0;
+    }
+
+    .section-low h1 {
+        top: -38vh;
+        font-size: 4vh;
+    }
+
+    .section-low button {
+        top: -40vh;
+    }
+}
+
+    @media screen and (max-width:412px) {
         section h1 {
             font-size: 4.8vh;
         }
 
-        .section-low {
-            height: 30vh;
+        main .container .pattern-left {
+            transform: translate(0, 330.5%);
         }
 
+        section .section-low {
+            height: 35vh;
+        }
+
+        section .section-low-pattern-mobile {
+            transform: translate(0, -93%) !important;
+        }
+        
+
         .section-low h1 {
-            top: -35vh;
+            top: -74vh;
         }
 
         .section-low button {
