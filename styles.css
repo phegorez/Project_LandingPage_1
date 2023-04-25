@@ -730,6 +730,7 @@ footer .footer-low .content p {
         font-size: 38px;
         width: 100%;
         top: -71vh !important;
+        border: 1px solid green;
     }
 
     section .section-low-pattern-mobile {
