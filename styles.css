@@ -763,7 +763,7 @@ footer .footer-low .content p {
 
 @media screen and (max-width:375px) {
     section .section-low {
-        height: 39vh !important;
+        height: 45vh !important;
         padding: 32vh 0 0 0;
         overflow: hidden;
         width: 100%;
@@ -773,15 +773,15 @@ footer .footer-low .content p {
     section .section-low h1 {
         font-size: 38px;
         width: 100%;
-        top: -66vh !important;
+        top: -70vh !important;
     }
 
     section .section-low-pattern-mobile {
-        transform: translate(0,-76%) !important;
+        transform: translate(0,-72%) !important;
     }
 
     section .section-low button {
-        top: -62vh !important;
+        top: -64vh !important;
         width: 18vh;
         padding: 1.5vh;
     }
@@ -926,7 +926,7 @@ footer .footer-low .content p {
         }
 
         section .section-low-pattern-mobile {
-            transform: translate(0, -93%) !important;
+            transform: translate(0, -93%)
         }
         
 
