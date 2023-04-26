@@ -313,7 +313,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(221, 219, 219);
+    background-color: rgb(250, 250, 250);
     padding: 7vh 17vh;
     overflow: hidden;
 }
@@ -797,23 +797,6 @@ footer .footer-low .content p:hover {
     footer .footer-top .social i {
         font-size: 5vh;
     }
-
-    /* hoverfill */
-    /* footer .footer-low .content p:hover {
-        text-decoration: underline;
-        transition: 0.3s ease-in-out;
-    }
-
-    footer .footer-top .social i:hover {
-        color: hsl(300, 1%, 22%);
-        transition: 0.3s ease-in-out;
-    }
-
-    section .section-low button:hover {
-        background-color: white;
-        color: hsl(270, 9%, 17%); 
-        transition: 0.3s ease-in-out;
-    } */
 }
 
 @media screen and (max-width:320px) {
