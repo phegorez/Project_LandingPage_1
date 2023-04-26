@@ -94,6 +94,12 @@ nav ul li{
     font-weight: 700;
     font-size: 1.6vh;
     letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: hsl(270, 9%, 17%);
+    transition: 0.3s ease-in-out;
 }
 
 nav ul .ul-patter {
@@ -112,6 +118,12 @@ nav ul button {
     outline: solid 1.5px gray;
     cursor: pointer;
     letter-spacing: 1px;
+}
+
+nav ul button:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: white ;
+    transition: 0.3s ease-in-out;
 }
 
 main .container {
@@ -165,6 +177,12 @@ main .container article button {
     outline: solid 2px white;
     cursor: pointer;
     letter-spacing: 1px;
+}
+
+main .container article button:hover {
+    background-color: white;
+    color: hsl(270, 9%, 17%); 
+    transition: 0.3s ease-in-out;
 }
 
 main .container .pattern-left {
@@ -272,6 +290,12 @@ section .section-low button {
     z-index: 1;
 }
 
+section .section-low button:hover {
+    background-color: white;
+    color: hsl(270, 9%, 17%);
+    transition: 0.3s ease-in-out;
+}
+
 section .section-low .section-low-pattern-mobile {
     display: none;
 }
@@ -324,6 +348,12 @@ footer .footer-top .logo {
 footer .footer-top .social i{
     color: #999799;
     font-size: 3vh;
+    cursor: pointer;
+}
+
+footer .footer-top .social i:hover {
+    color: hsl(300, 1%, 22%);
+    transition: 0.3s ease-in-out;
 }
 
 footer .footer-low {
@@ -359,6 +389,12 @@ footer .footer-low .content p {
     font-size: 2vh;
     letter-spacing: 1px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+footer .footer-low .content p:hover {
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -414,6 +450,12 @@ footer .footer-low .content p {
         letter-spacing: 1px;
     }
 
+    nav ul li:hover {
+        color: white;
+        text-decoration: underline;
+        transition: 0.3s ease-in-out;
+    }
+
     nav ul button {
         padding: 1.5vh 0;
         width: 40vh;
@@ -425,6 +467,12 @@ footer .footer-low .content p {
         color: white;
         outline: solid 1.5px white;
         cursor: pointer;
+    }
+
+    nav ul button:hover {
+        background-color: white;
+        color: hsl(256, 26%, 20%);
+        transition: 0.3s ease-in-out;
     }
 
     nav ul .ul-patter {
@@ -749,6 +797,23 @@ footer .footer-low .content p {
     footer .footer-top .social i {
         font-size: 5vh;
     }
+
+    /* hoverfill */
+    /* footer .footer-low .content p:hover {
+        text-decoration: underline;
+        transition: 0.3s ease-in-out;
+    }
+
+    footer .footer-top .social i:hover {
+        color: hsl(300, 1%, 22%);
+        transition: 0.3s ease-in-out;
+    }
+
+    section .section-low button:hover {
+        background-color: white;
+        color: hsl(270, 9%, 17%); 
+        transition: 0.3s ease-in-out;
+    } */
 }
 
 @media screen and (max-width:320px) {
